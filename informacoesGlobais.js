@@ -3,7 +3,9 @@ guilhermeonrails/api/main/dados-globais.json’
 async function visualizarInformacoesGlobais() {
 const res = await fetch(url)
 const dados = await res.json()
-  console.log(dados.tempo_medio);
+  document.createElement(‘p’)
+  paragrafo.classList.add(‘graficos-container__texto’)
+  const paragrafo=console.log(dados.tempo_medio);
 }
 visualizarInformacoesGlobais()
 
