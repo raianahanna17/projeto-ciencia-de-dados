@@ -16,4 +16,5 @@ const porcentagemConectada = ((pessoasConectadas / pessoasNoMundo ) * 100).toFix
 const container = document.getElemetById('graficos-container')
 container.appendChild(paragrafo)
 }
+
 vizualizarInformacoesGlobais()
