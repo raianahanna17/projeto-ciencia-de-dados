@@ -1,11 +1,12 @@
-async function quantidadeUsuarios() {
-    const url = ‘https://raw.
-    githubusercontent.com/guilhermeonrails/api/
-    main/numero-usuarios.json’
-    const res = await fetch(url)
-    const dados = await res.json()
-    
-    console.log(dados)
-    }
-    
-    quantidadeUsuarios()
+const getCSS = (variavel) => {
+    const bodyStyles = getComputedStyle(document.body)
+    return bodyStyles.getPropertyValue(variavel)
+}
+
+const tickConfig = {
+    family: getCSS('--font'),
+    size: 16,
+    color: getCSS('--primary-color')
+}
+
+export {getCSS, tickConfig}
